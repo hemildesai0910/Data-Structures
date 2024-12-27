@@ -1,48 +1,57 @@
-﻿# LeetCode Daily Solutions
+# 🎉 **LeetCode Daily Solutions** 📅
 
-Welcome to my **LeetCode Daily Solutions** repository! 🚀  
-I solve coding problems daily from LeetCode and share my solutions here. Each solution includes well-documented comments to help others understand the approach, logic, and implementation.
+Welcome to my **LeetCode Daily Solutions** repository!  
+Here, I share my daily solutions to LeetCode problems, with well-commented code and explanations to help you understand the approach and logic behind each solution. Whether you're a beginner or experienced, this repo is meant to inspire learning and problem-solving.
+
+> **Daily Challenge** 💪: One problem, one solution, every single day! 🚀
 
 ---
 
-## Problem: 88. Merge Sorted Array
+## 🚀 Problem: **88. Merge Sorted Array**
 
-### Description
+### 📝 **Problem Description**
 
 You are given two integer arrays `nums1` and `nums2`, sorted in non-decreasing order, and two integers `m` and `n`, representing the number of elements in `nums1` and `nums2` respectively.
 
-The task is to merge `nums1` and `nums2` into a single array sorted in non-decreasing order. The result should be stored inside `nums1`. To accommodate this, `nums1` has a length of `m + n`, where the first `m` elements denote the elements that should be merged, and the last `n` elements are set to `0`.
+Your task is to merge `nums1` and `nums2` into a single array sorted in non-decreasing order. The result should be stored inside `nums1`. To accommodate this, `nums1` has a length of `m + n`, where the first `m` elements denote the elements that should be merged, and the last `n` elements are set to `0`.
 
 ---
 
-### Examples
+### 🏆 **Example Test Cases**
 
 #### Example 1:
 **Input:**  
-`nums1 = [1,2,3,0,0,0]`, `m = 3`, `nums2 = [2,5,6]`, `n = 3`  
+`nums1 = [1, 2, 3, 0, 0, 0]`, `m = 3`, `nums2 = [2, 5, 6]`, `n = 3`  
 **Output:**  
-`[1,2,2,3,5,6]`  
+`[1, 2, 2, 3, 5, 6]`  
 **Explanation:**  
-The arrays we are merging are `[1,2,3]` and `[2,5,6]`.  
-The result is `[1,2,2,3,5,6]`.
+The arrays `[1, 2, 3]` and `[2, 5, 6]` are merged to form `[1, 2, 2, 3, 5, 6]`.
 
 #### Example 2:
 **Input:**  
 `nums1 = [1]`, `m = 1`, `nums2 = []`, `n = 0`  
 **Output:**  
 `[1]`  
+**Explanation:**  
+`nums1` remains `[1]` as `nums2` is empty.
 
 #### Example 3:
 **Input:**  
 `nums1 = [0]`, `m = 0`, `nums2 = [1]`, `n = 1`  
 **Output:**  
 `[1]`  
+**Explanation:**  
+Since `nums1` has no elements, the result is `[1]` from `nums2`.
 
 ---
 
-### Solution
+### 💡 **Solution Explanation**
 
-Here's the solution for the problem in C++:
+The problem is solved using a **two-pointer** technique. We maintain two pointers (`l` and `r`) to traverse through both arrays (`nums1` and `nums2`). We compare the elements and add the smaller one to a temporary array. After merging, the array is copied back to `nums1`.
+
+---
+
+### 👨‍💻 **Solution Code (C++)**
 
 ```cpp
 #include <vector>
