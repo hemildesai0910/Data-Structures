@@ -3,11 +3,11 @@
 Welcome to my **LeetCode Daily Solutions** repository!  
 Here, I share my daily solutions to LeetCode problems, with well-commented code and explanations to help you understand the approach and logic behind each solution. Whether you're a beginner or experienced, this repo is meant to inspire learning and problem-solving.
 
-> **Daily Challenge** 💪: One problem, one solution, every single day! 🚀
+> **Daily Coding Practice** 💪: Sharpen your skills with a new challenge every single day! 🚀
 
 ---
 
-## 🚀 Problem: **88. Merge Sorted Array**
+## 🚀 Problem: [**88. Merge Sorted Array**](https://leetcode.com/problems/merge-sorted-array/)
 
 ### 📝 **Problem Description**
 
